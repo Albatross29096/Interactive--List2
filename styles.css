@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #afc1d4;
+    font-family: Arial, sans-serif; /* Example font for clarity */
+}
+
+.list-container {
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 300px; /* Fixed width for each container */
+}
+
+.list-container:hover {
+    transform: translateY(-5px);
+}
+
+.list-container h2 {
+    font-size: 1.5rem;
+    color: #df7171;
+    margin-bottom: 10px;
+}
+
+.list-container ol,
+.list-container ul {
+    padding: 2;
+    margin-top: 10px; /* Space above the list */
+}
+
+.list-container ol {
+    list-style-type: decimal; /* Use decimal numbers for ordered list */
+    text-align: left; /* Align text to the left for ordered list */
+}
+
+.list-container ul {
+    list-style-type: disc; /* Use disc bullets for unordered list */
+    text-align: left; /* Align text to the left for unordered list */
+}
+
+.list-container li {
+    font-size: 1.2rem;
+    color: #90d84d;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-align: left; /* Align text to the left for both list types */
+}
+
+.list-container li:hover {
+    color: #da9031;
+}
